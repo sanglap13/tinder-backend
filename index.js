@@ -6,7 +6,7 @@ import Cards from './dbCards.js';
 // App Config
 const app = express();
 const port = process.env.PORT || 8001
-const connection_url = `mongodb+srv://admin:XeLmfzf2OFzR3Osr@cluster0.ugsml5x.mongodb.net/Cluster0?retryWrites=true&w=majority`
+const connection_url = process.env.MONGO_URL
 
 
 // Middlewares
